@@ -1,0 +1,25 @@
+mixin nav()
+    nav.nav
+        .nav__icon
+            span.nav__icon--line1
+            span.nav__icon--line2
+            span.nav__icon--line3
+            span.nav__icon--line4
+        ul.nav__list
+            li.active
+                a(href="index.html") Главная
+            li
+                a(href="#") О нас
+            li
+                a(href="#") Каталог
+                ul.nav__dropdown
+                    li
+                        a(href="#") Пункт 1
+                    li
+                        a(href="#") Пункт 2
+                    li
+                        a(href="#") Пункт 3
+            li
+                a(href="#") Информация
+            li
+                a(href="#") Контакты

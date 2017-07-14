@@ -1,0 +1,16 @@
+.header {
+  //background: rgba(#3B3B42, 0.99);
+  background: url(../../static/img/general/header_bg.jpg);
+}
+
+.logo {
+  float: left;
+  width: rem(184px);
+  height: rem(122px);
+  margin-top: rem(17px);
+}
+
+.logo img {
+  max-width: 100%;
+  margin: auto;
+}

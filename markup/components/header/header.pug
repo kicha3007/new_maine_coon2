@@ -1,0 +1,9 @@
+mixin header(data)
+    include ../nav/nav
+    header.header.media-test
+        .container
+                    a(href="#").logo
+                        img(src="%=static=%img/general/logo.png")
+                    +nav().hidden-xs
+                    input(type="button" value="нажми меня")
+

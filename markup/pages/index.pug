@@ -1,0 +1,23 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/footer/footer.pug
+    include ../components/header/header.pug
+
+    head
+        +head()
+    body.page
+        |%=symbols=%
+
+        section.page__wrapper
+            +header()
+            section.content
+                main.main-content
+
+        .page__footer
+            +footer()
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/separate-js/jquery.min.js')
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

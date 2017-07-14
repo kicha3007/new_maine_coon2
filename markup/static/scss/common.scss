@@ -1,0 +1,54 @@
+$container_width: 1256px;
+$placeholder-color: blue;
+
+/******************* Основные стили *******************/
+
+html {
+    font-size: 16px;
+    @include desktop {
+        font-size: 16px;
+    }
+    @include laptop {
+        font-size: 15px;
+    }
+    @include tablets {
+        font-size: 14px;
+    }
+    @include phones {
+        font-size: 13px;
+    }
+}
+
+body {
+    font-family: "#", sans-serif;
+    color: #000000;
+}
+
+.page__wrapper {
+    background: url(../img/general/texture.jpg) center;
+}
+
+/*.container {
+    width: $container_width;
+    padding: 0 5px;
+}*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+    text-decoration: none;
+}
+
+input {
+    @include placeholder(turquoise)
+}
+
+
+

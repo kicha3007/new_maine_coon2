@@ -1,0 +1,26 @@
+.search {
+  position: relative;
+}
+
+.search__input {
+  width: 100%;
+  padding: 10px 40px 10px 35px;
+  line-height: 16px;
+  background: rgba(#F5F5F5, 0.5);
+  border: 1px solid Gainsboro;
+  border-radius: 18px;
+  outline: none;
+}
+
+.search__button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  margin-top: -17px;
+  padding: 0;
+  background: url('../../static/img/general/searсh-icon.png') center no-repeat;
+  border: 0 none;
+  outline: none;
+}

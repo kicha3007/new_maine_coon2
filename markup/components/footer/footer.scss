@@ -1,0 +1,28 @@
+$footer_height: rem(60px);
+
+/******************* Прижатый футер *******************/
+
+html,
+body {
+   // width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+    overflow: hidden;
+
+&:after {
+     content: "";
+     display: block;
+     height: $footer-height;
+ }
+}
+
+.page__footer {
+    height: $footer_height;
+    background: green;
+}

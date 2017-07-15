@@ -1,9 +1,9 @@
 mixin header(data)
+    include ../logo/logo
     include ../nav/nav
-    header.header.media-test
+    header.header
         .container
-                    a(href="#").logo
-                        img(src="%=static=%img/general/logo.png")
-                    +nav().hidden-xs
-                    input(type="button" value="нажми меня")
-
+            .header__logo
+                +logo()
+            .header__nav
+                +nav()

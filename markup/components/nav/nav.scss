@@ -1,19 +1,22 @@
 .nav {
-  @extend %clearfix;
+  text-align: right;
 }
 
 .nav__list {
-  float: right;
   @include phones {
-    //float: none;
     opacity: 0;
+    margin-top: 35px;
+    position: relative;
+    z-index: 99;
   }
-  margin-top: rem(63px);
   padding: 0;
   font-size: 0;
 }
 
 .nav__list> li {
+  @include phones {
+    display: block;
+  }
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -21,29 +24,26 @@
   font-size: rem(18px);
   text-align: center;
   text-transform: uppercase;
-  @include phones {
-    display: block;
-  }
 }
 
 .nav__list> li> a  {
   display: block;
   @include desktop {
-    padding: rem(32px) rem(48px);
+    padding: rem(32px) rem(45px);
   }
   @include laptop {
-    padding: rem(32px) rem(32px);
+    padding: rem(32px) rem(29px);
   }
   @include tablets {
-    padding: rem(32px) rem(18px);
+    padding: rem(32px) rem(15px);
   }
   @include phones {
-    padding: rem(14px) rem(18px);
+    padding: rem(14px) rem(15px);
+    border: 1px #ffffff solid;
   }
   color: #ffffff;
   background: #E6CAAB;
   text-decoration: none;
-  line-height: 1.5;
   transition: all 0.3s;
   &:visited,
   &:hover,
@@ -54,16 +54,31 @@
 
 .nav__list> li {
   &:nth-child(1)> a {
-    background: #E7C9AD;
+    background: #FFAD4B;
   }
   &:nth-child(2)> a {
     background: #FF886E;
   }
   &:nth-child(3)> a {
-    background: #8CC4D9;
+    background: #FF6B7B;
   }
   &:nth-child(4)> a {
+    background: #8CC4D9;
+  }
+  &:nth-child(5)> a {
     background: #A5D5AC;
+  }
+}
+
+.nav__list> li {
+  &:nth-child(1)> a,
+  &:nth-child(2)> a,
+  &:nth-child(3)> a,
+  &:nth-child(4)> a,
+  &:nth-child(5)> a {
+    @include phones {
+      background: #4A4A4A;
+    }
   }
 }
 
@@ -123,18 +138,22 @@
 }
 
 .nav__icon {
-  display: none;
   @include phones {
     display: inline-block;
   }
-  float: right;
+  display: none;
   width: rem(65px);
   height: rem(35px);
   position: relative;
+  top:-10px;
   cursor: pointer;
-  margin-top: rem(25px);
   margin-right: rem(25px);
+  transition: all 0.25s;
 }
+
+//.nav__icon:hover {
+//  background: rgba(#4A4A4A, 0.8);
+//}
 
 .nav__icon span {
   display: block;
@@ -161,7 +180,7 @@
 
 .nav.menu_state_open .nav__icon--line1 {
   top: 18px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 

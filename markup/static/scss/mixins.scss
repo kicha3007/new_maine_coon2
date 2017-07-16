@@ -1,3 +1,4 @@
+/******************* Clearfix *******************/
 
 %clearfix {
     &:after {
@@ -7,10 +8,14 @@
     }
 }
 
+/******************* Inline-block *******************/
+
 @mixin inlineblock($valign: top) {
     display: inline-block;
     vertical-align: $valign;
 }
+
+/******************* Растягивание на всю ширину блока *******************/
 
 @mixin justify() {
     text-align: justify;
@@ -22,24 +27,44 @@
     }
 }
 
-@mixin placeholder($color: #000000) {
+/******************* Цвет текста в placeholder *******************/
+
+
+@mixin placeholder($placeholder_color: #000000) {
     &::-webkit-input-placeholder {
-        color: $color;
+        color: $placeholder_color;
     }
     &:-moz-placeholder { /* Firefox 18- */
-        color: $color;
+        color: $placeholder_color;
     }
     &::-moz-placeholder {  /* Firefox 19+ */
-        color: $color;
+        color: $placeholder_color;
     }
     &-ms-input-placeholder {
-        color: $color;
+        color: $placeholder_color;
     }
 }
+
+/******************* Перевод px в rem *******************/
 
 @function rem($px) {
     @return $px / 16px + 0rem;
 }
+
+/******************* Сглаживание шрифтов *******************/
+
+@mixin font-smoothing($value: antialiased) {
+    @if $value == antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+/******************* Медиазапросы *******************/
 
 @mixin desktop () {
     @media screen and (min-width: 1200px) {
@@ -64,9 +89,4 @@
         @content;
     }
 }
-
-
-
-
-
 

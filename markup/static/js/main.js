@@ -5,3 +5,14 @@
         });
     });
 })(jQuery);
+
+$('#slider1').owlCarousel({
+    loop:true,
+    autoplay: false,
+    items: 1,
+    responsiveClass:true,
+    nav:true,
+    animateOut: 'fadeOut',
+    navText: [""]
+
+});

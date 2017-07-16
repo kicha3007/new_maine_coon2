@@ -4,6 +4,7 @@ html(class="no-js", lang="ru")
     include ../components/head/head.pug
     include ../components/footer/footer.pug
     include ../components/header/header.pug
+    include ../components/slider/slider.pug
 
     head
         +head()
@@ -11,8 +12,9 @@ html(class="no-js", lang="ru")
         |%=symbols=%
 
         section.page__wrapper
-            +header()
-            section.content
+            .content
+                +header()
+                +slider()
                 main.main-content
 
         .page__footer
@@ -20,4 +22,6 @@ html(class="no-js", lang="ru")
 
         //- Main scripts. You can replace it, but I recommend you to leave it here
         script(src='%=static=%js/separate-js/jquery.min.js')
+        script(src='%=static=%js/separate-js/owl.carousel.js')
         script(src='%=static=%js/main%=hash=%%=min=%.js')
+

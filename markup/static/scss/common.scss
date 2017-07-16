@@ -1,7 +1,14 @@
 $container_width: 1256px;
-$placeholder-color: blue;
 
 /******************* Основные стили *******************/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 html {
     font-size: 16px;
@@ -25,14 +32,11 @@ body {
     line-height: 1.42;
 }
 
-.page__wrapper {
-    background: url(../img/general/texture.jpg) center;
-  //  background-size: contain;
-}
 
 /*.container {
     width: $container_width;
     padding: 0 5px;
+    margin: auto;
 }*/
 
 * {

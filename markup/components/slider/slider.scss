@@ -1,0 +1,84 @@
+.slider {
+  height: rem(780px);
+}
+
+.slider__img {
+  height: rem(570px);
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__img img {
+  min-width: 100%;
+  margin: auto;
+}
+
+.owl-nav> div {
+  position: absolute;
+  top: rem(250px);
+  width: rem(60px);
+  height: rem(60px);
+  border-radius:50%;
+  background-color: #D8D8D8;
+  opacity: 0.8;
+  transition: all 0.3s;
+  @include phones {
+    display: none;
+  }
+}
+
+.owl-prev {
+  background: url(../../static/img/general/slider_arrow.png) center no-repeat;
+  left: rem(-35px);
+
+}
+
+.owl-next {
+  background: url(../../static/img/general/slider_arrow.png) center no-repeat;
+  transform: scaleX(-1);
+  right: rem(-35px);
+
+}
+
+.owl-nav div:hover {
+  opacity:0.5;
+}
+
+.owl-dots {
+  position: absolute;
+  top: 67%;
+  right: 45%;
+  border-radius: 50%;
+}
+
+.owl-dots .owl-dot {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: rem(9px);
+  border-radius: 50%;
+  width: rem(15px);
+  height: rem(15px);
+  transition: all 0.1s;
+}
+
+.owl-dots .owl-dot:hover {
+  background: #FF8A8E;
+}
+
+.owl-dots .owl-dot:hover span {
+  background: #FF8A8E;
+}
+
+.owl-dots .owl-dot span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: rem(-5px);
+  margin-left: rem(-5px);;
+  width: rem(10px);
+  height: rem(10px);
+  background: #cdcdcd;
+  border-radius: 50%;
+  transition: all 0.1s;
+}

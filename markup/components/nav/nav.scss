@@ -23,11 +23,9 @@
   margin-left: rem(2px);
   font-size: rem(18px);
   text-align: center;
-  text-transform: uppercase;
 }
 
 .nav__list> li> a  {
-  display: block;
   @include desktop {
     padding: rem(32px) rem(45px);
   }
@@ -41,6 +39,7 @@
     padding: rem(14px) rem(15px);
     border: 1px #ffffff solid;
   }
+  display: block;
   color: #ffffff;
   background: #E6CAAB;
   text-decoration: none;
@@ -137,7 +136,7 @@
   opacity: 1;
 }
 
-.nav__icon {
+.nav__trigger {
   @include phones {
     display: inline-block;
   }
@@ -151,11 +150,11 @@
   transition: all 0.25s;
 }
 
-//.nav__icon:hover {
+//.nav__trigger:hover {
 //  background: rgba(#4A4A4A, 0.8);
 //}
 
-.nav__icon span {
+.nav__trigger span {
   display: block;
   position: absolute;
   height: 9px;
@@ -166,33 +165,33 @@
   transition: 0.25s ease-in-out;
 }
 
-.nav__icon--line1 {
+.nav__trigger--line1 {
   top: 0;
 }
 
-.nav__icon--line2, .nav__icon--line3 {
+.nav__trigger--line2, .nav__trigger--line3 {
   top: 13px;
 }
 
-.nav__icon--line4 {
+.nav__trigger--line4 {
   top: 26px;
 }
 
-.nav.menu_state_open .nav__icon--line1 {
+.nav.menu_state_open .nav__trigger--line1 {
   top: 18px;
   width: 0;
   left: 50%;
 }
 
-.nav.menu_state_open .nav__icon--line2 {
+.nav.menu_state_open .nav__trigger--line2 {
   transform: rotate(45deg);
 }
 
-.nav.menu_state_open .nav__icon--line3 {
+.nav.menu_state_open .nav__trigger--line3 {
   transform: rotate(-45deg);
 }
 
-.nav.menu_state_open .nav__icon--line4 {
+.nav.menu_state_open .nav__trigger--line4 {
   top: 18px;
   width: 0;
   left: 50%;

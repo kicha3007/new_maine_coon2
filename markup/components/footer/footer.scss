@@ -13,11 +13,11 @@ $footer_height: rem(60px);
      content: "";
      display: block;
      height: $footer-height;
+    margin-bottom: -$footer-height;
  }
 }
 
 .page__footer {
     height: $footer_height;
-    margin-top: -$footer-height;
     background: green;
 }

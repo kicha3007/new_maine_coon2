@@ -1,19 +1,22 @@
 .header {
   background: url(../../static/img/general/header_bg.jpg);
+  //background: linear-gradient(top, #EFEFF1, #ffffff);
 }
 
-.header__logo {
-
+.header__left {
   float: left;
+  width: 20%;
   margin-top: rem(17px);
 }
 
-.header__nav {
+.header__right {
   @include phones {
     float:none;
+    width: 100%;
   }
   @extend %clearfix;
   float: right;
+  width: 80%;
   margin-top: rem(63px);
 }
 

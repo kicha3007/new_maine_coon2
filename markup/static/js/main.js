@@ -1,6 +1,6 @@
 (function($){
     $(function() {
-        $('.nav__icon').on('click', function() {
+        $('.nav__trigger').on('click', function() {
             $(this).closest('.nav').toggleClass('menu_state_open');
         });
     });
@@ -13,6 +13,18 @@ $('#slider1').owlCarousel({
     responsiveClass:true,
     nav:true,
     animateOut: 'fadeOut',
-    navText: [""]
+    navText: [""],
+    smartSpeed:1000,
+    responsive:{ //Адаптация в зависимости от разрешения экрана
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
 
 });

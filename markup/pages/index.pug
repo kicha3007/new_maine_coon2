@@ -9,13 +9,12 @@ html(class="no-js", lang="ru")
     head
         +head()
     body.page
-        |%=symbols=%
 
         section.page__wrapper
-            .content
+            .page__content
                 +header()
                 +slider()
-                main.main-content
+                main.page__main-content
 
         .page__footer
             +footer()

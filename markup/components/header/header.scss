@@ -4,6 +4,11 @@
 }
 
 .header__left {
+  @include phones {
+    float: none;
+    position: relative;
+    z-index: 100;
+  }
   float: left;
   width: 20%;
   margin-top: rem(17px);
@@ -13,6 +18,7 @@
   @include phones {
     float:none;
     width: 100%;
+    margin-top: -40px;
   }
   @extend %clearfix;
   float: right;

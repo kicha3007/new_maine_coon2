@@ -1,10 +1,21 @@
-(function($){
-    $(function() {
-        $('.nav__trigger').on('click', function() {
-            $(this).closest('.nav').toggleClass('menu_state_open');
-        });
+$(document).ready(function() {
+    var nav = $('.nav__list');
+    $(document).on('click','.nav__trigger',function(){
+        $('.nav__trigger').toggleClass('active');
+            if(nav.is(':visible')) {
+                nav.slideUp();
+            } else {
+                nav.slideDown();
+            }
     });
-})(jQuery);
+
+    $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 767 && nav.is(':hidden')) {
+            nav.removeAttribute("style");
+        }
+    })
+});
 
 $('#slider1').owlCarousel({
     loop:true,

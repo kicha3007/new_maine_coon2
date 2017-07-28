@@ -1,6 +1,5 @@
 .slider {
-
-  background: #ffffff;
+  height: rem(700px);
 }
 
 .slider__item {
@@ -23,16 +22,7 @@
   position: relative;
   overflow: hidden;
   background: #000000;
- @include phones {
-
-  }
   
-}
-
-.slider__img img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .slider__text {

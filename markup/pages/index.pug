@@ -5,15 +5,16 @@ html(class="no-js", lang="ru")
     include ../components/footer/footer.pug
     include ../components/header/header.pug
     include ../components/slider/slider.pug
+    include ../components/information/information.pug
 
     head
         +head()
     body.page
-
         section.page__wrapper
             .page__content
                 +header()
-                +slider()
+                //+slider()
+                +information()
                 main.page__main-content
 
         .page__footer

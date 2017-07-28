@@ -1,1 +1,27 @@
+.information {
+  background: #ffffff;
+}
 
+.information__item-content {
+  border: rem(1px) solid #959594;
+  padding: rem(10px) rem(18px) ;
+}
+
+.information__sub-title {
+  text-align: center;
+}
+
+.information__img-box {
+  width: 100%;
+  height: rem(250px);
+  margin-bottom: rem(30px);
+  overflow: hidden;
+}
+
+.information__img-box img {
+  margin: auto;
+}
+
+.information__text {
+ // padding-right: rem(20px);
+}

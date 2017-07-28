@@ -38,6 +38,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: rem(20px);
 }
 
+h1 {
+    margin-top: rem(120px);
+    margin-bottom: rem(70px);
+}
+
+h2 {
+    margin-top: rem(70px);
+    margin-bottom: rem(35px);
+    text-align: center;
+    font-size: rem(42px);
+
+}
+
+h3 {
+    font-size: rem(22px);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /*.container {
     width: $container_width;
@@ -60,6 +83,49 @@ a:active {
 
 input {
     @include placeholder(turquoise)
+}
+
+.btn {
+    padding: rem(13px) rem(15px);
+    border: rem(2px) solid #959594;
+    background: transparent;
+    line-height: rem(14px);
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #959594;
+    font-size: rem(14px);
+    transition: all 0.3s ;
+
+}
+
+.btn:hover {
+    color: #ffffff;
+    background: #e9cb63;
+    border-color: #e9cb63;
+}
+
+.btn--mod-1 {
+    padding: rem(14px) rem(17px);
+    background: #e9cb63;
+    color: #ffffff;
+    border: none;
+    border-radius: rem(14px);
+}
+.btn--mod-1:hover {
+    background: #ffffff;
+    color: #090d16;
+}
+.btn--mod-2 {
+    padding: rem(28px) rem(70px);
+    font-size: rem(20px);
+    line-height: rem(20px);
+    letter-spacing: 0.06em;
+    border-radius: rem(16px);
+}
+
+* {
+    outline : none;
 }
 
 

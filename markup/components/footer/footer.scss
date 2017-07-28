@@ -4,15 +4,15 @@ $footer_height: rem(60px);
 
 
 .page__wrapper {
-    background: url(../../static/img/general/texture.jpg) center;
+    background: url(../../static/img/general/texture.jpg) center repeat;
     position: relative;
     min-height: 100%;
     overflow: hidden;
 
 &:after {
-     content: "";
-     display: block;
-     height: $footer-height;
+    content: "";
+    display: block;
+    height: $footer-height;
     margin-bottom: -$footer-height;
  }
 }

@@ -1,7 +1,11 @@
-//@include font-face(''Righteous', cursive', '../fonts/proximanova-light', 400, $exts: woff woff2 ttf);
-//@include font-face('ProximaNova', '../fonts/proximanova-regular', normal, $exts: woff woff2 ttf);
 
-//$font-1: 'ProximaNova', Arial, sans-serif;
+@include font-face("Roboto", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("Roboto", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("Roboto", "../fonts/RRobotoLight/RobotoLight", 400);
+@include font-face("Roboto", "../fonts/RobotoMedium/RobotoMedium", 500);
+
+
+
 
 
 

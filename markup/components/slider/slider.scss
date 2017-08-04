@@ -87,12 +87,12 @@
 
 .owl-dots .owl-dot:hover,
 .owl-dots .owl-dot.active {
-  background: #FF8A8E;
+  background: $main-color;
 }
 
 .owl-dots .owl-dot:hover span,
 .owl-dots .owl-dot.active span {
-  background: #FF8A8E;
+  background: $main-color;
 }
 
 .owl-dots .owl-dot span {

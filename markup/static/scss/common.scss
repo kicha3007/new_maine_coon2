@@ -1,5 +1,4 @@
-$container_width: 1256px;
-$main-color: #E9CB63;
+
 
 /******************* Основные стили *******************/
 
@@ -29,7 +28,7 @@ html {
 }
 
 body {
-    font-family: "#", sans-serif;
+    font-family: $default-font;
     color: #000000;
     line-height: 1.42;
 }

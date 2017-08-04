@@ -45,19 +45,7 @@ $('#slider1').owlCarousel({
     items: 1,
     responsiveClass:true,
     nav:true,
-    animateOut: 'fadeOut',
     navText: [""],
     smartSpeed:1000,
-    responsive:{ //Адаптация в зависимости от разрешения экрана
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
 
 });

@@ -5,6 +5,8 @@
   &:active {
     color: #000000;
   }
+  z-index: 5;
+  float: left;
   display: block;
   color: #000000;
   text-align: center;
@@ -12,19 +14,23 @@
 
 .logo__img-box {
   @include phones {
-    width: rem(63px);
-    height: rem(70px);
+    width: rem(43px);
+    height: rem(50px);
   }
-  width: rem(93px);
-  height: rem(100px);
+  display: inline-block;
+  vertical-align: middle;
+  width: rem(63px);
+  height: rem(70px);
   margin: auto;
 }
 
 .logo__text {
   @include phones {
-    font-size: rem(16px);
+    font-size: rem(24px);
     line-height: 1;
   }
+  display: inline-block;
+  vertical-align: middle;
   font-size: rem(30px);
   line-height: 1.2;
 }

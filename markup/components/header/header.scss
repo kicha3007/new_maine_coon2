@@ -1,26 +1,66 @@
 .header {
-  background: url(../../static/img/general/header_bg.jpg);
+  background: #323439;
   position: relative;
+  &:before {
+    @include laptop {
+      margin-right: rem(155px);
+    }
+    @include tablets {
+      margin-right: rem(130px);
+    }
+    @include phones {
+      right: 10%;
+    }
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 55%;
+    width: rem(5000px);
+    display: block;
+    background: $main-color;
+    margin-right: rem(135px);
+  }
+    &:after {
+      @include laptop {
+        margin-right: rem(135px);
+      }
+      @include tablets {
+        margin-right: rem(110px);
+      }
+      @include phones {
+        right: 10%;
+      }
+      content: "";
+      position: absolute;
+      border: 10px solid transparent;
+      border-left: 10px solid #e9cb63;
+      top: 50%;
+      right: 55%;
+      margin-right: rem(115px);
+      margin-top: -10px;
+    }
 }
 
 .header__left {
   @include phones {
-    margin-top: 0;
-    width: 30%;
+    width: 70%;
+    margin-top: rem(5px);
   }
+  position: relative;
+  width: 30%;
   float: left;
-  width: 20%;
   margin-top: rem(15px);
 }
 
 .header__right {
   @include phones {
-    margin-top: 0;
-    width: 70%;
+    width: 30%;
   }
   @extend %clearfix;
   float: right;
-  width: 80%;
-  margin-top: rem(63px);
+  width: 70%;
 }
+
+
 

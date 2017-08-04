@@ -1,45 +1,38 @@
 .slider {
-  height: rem(700px);
+
 }
 
 .slider__item {
   @include desktop {
-    height: rem(750px);
   }
   @include laptop {
-    height: rem(650px);
   }
   @include tablets {
-    height: rem(550px);
   }
   @include phones {
-    height: rem(400px);
   }
 }
 
 .slider__img-box {
-  height: 72%;
   position: relative;
   overflow: hidden;
   background: #000000;
-  
 }
 
-.slider__text {
-  background: #ffffff;
-  text-align: center;
-  position: relative;
-  height: 28%;
-  @include phones {
-    display: none;
-  }
+.slider__img-box img {
+  line-height: 1;
 }
 
 .owl-nav> div {
+  @include phones {
+    width: rem(50px);
+    height: rem(50px);
+  }
   position: absolute;
-  top: rem(250px);
+  top: 50%;
   width: rem(60px);
   height: rem(60px);
+  margin-top: rem(-30px);
   border-radius:50%;
   background-color: #D8D8D8;
   opacity: 0.8;
@@ -48,7 +41,7 @@
 
 .owl-prev {
   background: url(../../static/img/general/slider_arrow.png) center no-repeat;
-  left: rem(-35px);
+  left: rem(5px);
   @include phones {
     left: rem(-5px);
   }
@@ -58,26 +51,27 @@
 .owl-next {
   background: url(../../static/img/general/slider_arrow.png) center no-repeat;
   transform: scaleX(-1);
-  right: rem(-35px);
+  right: rem(5px);
   @include phones {
     right: rem(-5px);
   }
 
 }
 
-.owl-nav div:hover {
+.owl-nav div:hover, {
   opacity:0.5;
+
 }
 
 .owl-dots {
-  position: absolute;
-  top: 67%;
-  right: 50%;
-  border-radius: 50%;
-  margin-right: rem(-60px);
   @include phones {
     display: none;
   }
+  position: absolute;
+  top: 90%;
+  right: 50%;
+  border-radius: 50%;
+  margin-right: rem(-60px);
 }
 
 .owl-dots .owl-dot {
@@ -91,11 +85,13 @@
   transition: all 0.1s;
 }
 
-.owl-dots .owl-dot:hover {
+.owl-dots .owl-dot:hover,
+.owl-dots .owl-dot.active {
   background: #FF8A8E;
 }
 
-.owl-dots .owl-dot:hover span {
+.owl-dots .owl-dot:hover span,
+.owl-dots .owl-dot.active span {
   background: #FF8A8E;
 }
 

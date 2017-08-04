@@ -1,4 +1,5 @@
 $container_width: 1256px;
+$main-color: #E9CB63;
 
 /******************* Основные стили *******************/
 
@@ -8,6 +9,7 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
+
 }
 
 html {
@@ -34,8 +36,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    font-weight: normal;
     margin-bottom: rem(20px);
+    font-weight: normal;
+    line-height: 1.2;
 }
 
 h1 {
@@ -44,8 +47,8 @@ h1 {
 }
 
 h2 {
-    margin-top: rem(70px);
-    margin-bottom: rem(35px);
+    margin-top: rem(60px);
+    margin-bottom: rem(30px);
     text-align: center;
     font-size: rem(42px);
 
@@ -58,7 +61,8 @@ h3 {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+
+
 }
 
 
@@ -101,13 +105,13 @@ input {
 
 .btn:hover {
     color: #ffffff;
-    background: #e9cb63;
-    border-color: #e9cb63;
+    background: $main-color;
+    border-color: $main-color;
 }
 
 .btn--mod-1 {
     padding: rem(14px) rem(17px);
-    background: #e9cb63;
+    background: $main-color;
     color: #ffffff;
     border: none;
     border-radius: rem(14px);
